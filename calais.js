@@ -55,7 +55,7 @@ iniparser.parse(home + '/.calais', function(err, data) {
         })
         calais.set('content', content)
 
-        calais.fetch(function(result) {
+        calais.fetch(function(error, result) {
           console.log(result)
         })
       }
